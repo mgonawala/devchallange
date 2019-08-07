@@ -29,6 +29,7 @@ Given more time, centralized Exception management should be achieved.
 It is also important to have integration tests in place before it moves to production.
 Which would require implementing all the pending services.
 
+Jacoco & Sonar should be added in the build step.
 
 CI/CD can also be achieved for seamless development.
 
