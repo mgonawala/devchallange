@@ -57,7 +57,7 @@ public class ThreadSafeTest {
         for(int i=0; i<NUM_ITERATIONS; i++){
           String fromId = String.valueOf(random.nextInt(NUM_ACCOUNTS)).intern();
           String toId = String.valueOf(random.nextInt(NUM_ACCOUNTS)).intern();
-          BigDecimal amount = new BigDecimal(random.nextInt(500));
+          BigDecimal amount = new BigDecimal(random.nextInt(100));
           try {
             accountsService.transferAmount(fromId,toId,amount);
           } catch (AccountNotFoundException e) {

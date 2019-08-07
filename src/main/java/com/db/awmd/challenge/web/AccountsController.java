@@ -59,7 +59,7 @@ public class AccountsController {
 
   @PostMapping(path = "/{id}/transfer")
   public ResponseEntity<Object> transferMoney(@PathVariable("id") String fromAccount,
-      @RequestBody Transfer transfer) {
+      @RequestBody @Valid Transfer transfer) {
     try {
       this.accountsService
           .transferAmount(fromAccount, transfer.getToAccountId(), transfer.getAmount());
